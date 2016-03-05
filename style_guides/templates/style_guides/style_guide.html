@@ -1,0 +1,94 @@
+{% for style_guide in style_guides %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>StyleGen</title>
+      <style type="text/css">
+          body {
+                  font-family: {{ style_guide.body_font_family }};
+          }
+          h1 {
+                  font-size: {{ style_guide.h1_font_size }};
+          }
+          h2 {
+                  font-size: {{ style_guide.h2_font_size }};
+          }
+          h3 {
+                  font-size: {{ style_guide.h3_font_size }};
+          }
+          h4 {
+                  font-size: {{ style_guide.h4_font_size }};
+          }
+          h5 {
+                  font-size: {{ style_guide.h5_font_size }};
+          }
+          h6 {
+                  font-size: {{ style_guide.h6_font_size }};
+                  font-weight: {{ style_guide.h6_font_weight }};
+          }
+          p {
+                   font-size: {{ style_guide.paragraph_font_size }};
+          }
+          span {
+                  float: {{ style_guide.span_float }};
+                  margin-right: {{ style_guide.span_margin_right }};
+                  width: {{ style_guide.span_width }};
+                  height: {{ style_guide.span_height }};
+          }
+          .colour1 {
+                  background-color: {{ style_guide.colour1 }};
+          }
+          .colour2 {
+                  background-color: {{ style_guide.colour2 }};
+          }
+          .colour3 {
+                  background-color: {{ style_guide.colour3 }};
+          }
+          .colour4 {
+                  background-color: {{ style_guide.colour4 }};
+          }
+          .colour5 {
+                  background-color: {{ style_guide.colour5 }};
+          }
+          #container{
+                  float: left;
+                  margin: 4px 61px 27px 37px;
+                  width: 18%;
+          }
+          .verticalLine{
+                  border-left: 1px solid #171d2a;
+                  float:  left;
+                  margin-left: -24px;
+                  margin-top: 24px;
+                  height: 27em;
+          }
+      </style>
+  </head>
+  <body>
+      <div id='container'>
+          <h1>{{ style_guide.name }}</h1>
+          <hr>
+          <h1>H1 sample text</h1>
+          <h2>H2 sample text</h2>
+          <h3>H3 sample text</h3>
+          <h4>H4 sample text</h4>
+          <h5>H5 sample text</h5>
+          <h6>H6 sample text</h6>
+
+          <p>Sample paragraph text</p>
+
+          <h1>Colours:</h1>
+
+          <span class="colour1"></span>
+          <span class="colour2"></span>
+          <span class="colour3"></span>
+          <span class="colour4"></span>
+          <span class="colour5"></span>
+      </div>
+      <div class="verticalLine">
+      </div>
+  </body>
+</html>
+
+{% endfor %}
