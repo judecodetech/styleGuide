@@ -1,4 +1,4 @@
-WELCOME TO DJANGO STYLE GUIDE APP!!!
+WELCOME TO DJANGO STYLE GUIDE GENERATOR!!!
 
 Design studios around the world send clients (often handwritten) HTML pages displaying a standard set of HTML tags and CSS to give a site-wide view of some aspects of design that they're working on.
 
